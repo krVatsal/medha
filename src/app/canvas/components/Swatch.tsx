@@ -29,15 +29,6 @@ const Swatch: React.FC<SwatchProps> = ({
     { name: "Eraser", type: "eraser" },
   ] as const;
 
-  const colors = [
-    "#000000", // Black
-    "#FF0000", // Red
-    "#00FF00", // Green
-    "#0000FF", // Blue
-    "#FFFF00", // Yellow
-    "#FF00FF", // Magenta
-    "#00FFFF", // Cyan
-  ];
 
   return (
     <div className="flex flex-col space-y-4">
@@ -53,14 +44,11 @@ const Swatch: React.FC<SwatchProps> = ({
         ))}
       </div>
       <div className="flex space-x-4">
-        {colors.map((color) => (
-          <button
-            key={color}
-            className="w-8 h-8 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-400"
-            style={{ backgroundColor: color }}
-            onClick={() => setColor(color)}
-          />
-        ))}
+      <input
+          type="color"
+          onChange={(e) => setColor(e.target.value)}
+          className="w-10 h-10 p-0 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-400"
+        />
       </div>
       <div className="flex space-x-4">
         <button
