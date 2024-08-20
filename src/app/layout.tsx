@@ -22,9 +22,9 @@ export default function RootLayout({
         <div className="h-screen">
           <div className="grid grid-cols-6 h-full">
             <div className="col-span-1 flex flex-col h-full">
-              <div className="flex">
-              <img className="pl-6" src="/Codepen.svg" alt="" />
-              <div className="p-4">Medha</div>
+              <div className="flex p-2">
+                <img className="pl-6" src="/Codepen.svg" alt="" />
+                <div className="p-4">Medha</div>
               </div>
               <div className="flex-1 flex flex-col overflow-hidden">
                 <Sidebar />
