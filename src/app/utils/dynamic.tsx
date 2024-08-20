@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
-import Excalidraw, { convertToExcalidrawElements, ExcalidrawProps } from "@excalidraw/excalidraw";
+import Excalidraw, {
+  convertToExcalidrawElements,
+  ExcalidrawProps,
+} from "@excalidraw/excalidraw";
 
 import "@excalidraw/excalidraw/index.css";
 
