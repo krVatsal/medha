@@ -7,9 +7,7 @@ import ExcalidrawWrapper from "./excelidraw/page";
 export default function Home() {
   return (
     <div>
-      {/* <Canvas /> */}
-      <ExcalidrawWrapper/>
-      {/* <Excalidraw/> */}
+      <p>Actuallly important stuff</p>
     </div>
   );
 }
