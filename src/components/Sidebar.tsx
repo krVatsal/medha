@@ -3,8 +3,8 @@ import home from "../../public/home.svg";
 function Sidebar() {
   return (
     <div className="bg-white h-full border-r border-gray-200 flex flex-col">
-      <div className="flex-shrink-0 p-4">
-        <h2 className="text-xs font-semibold text-gray-500 mb-4">OVERVIEW</h2>
+      <div className="flex-shrink-0 pt-10">
+        <h2 className="text-xs font-semibold text-gray-500 mb-2 pl-4 ">OVERVIEW</h2>
       </div>
       <div className="flex-1 overflow-y-auto">
         <nav className="space-y-1 px-4">
@@ -43,8 +43,8 @@ function Sidebar() {
           </a>
         </nav>
       </div>
-      <div className="flex-shrink-0 p-4 border-t border-gray-200">
-        <h2 className="text-xs font-semibold text-gray-500 mb-4">SETTINGS</h2>
+      <div className="flex-shrink-0 p-4 border-t  border-gray-200">
+        <h2 className="text-xs font-semibold text-gray-500 mb-3">SETTINGS</h2>
         <a href="upgrade" className="flex items-center py-2 text-gray-900 font-semibold">
           <div className="w-5 h-5 mr-3">
            <img src="/Arrow up-circle.svg" alt="" />

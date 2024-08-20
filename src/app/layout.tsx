@@ -20,11 +20,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="h-screen">
-          <div className="grid grid-cols-6 h-full">
+          <div className="bg-white grid grid-cols-6 h-full">
             <div className="col-span-1 flex flex-col h-full">
-              <div className="flex">
+              <div className="flex pt-2">
               <img className="pl-6" src="/Codepen.svg" alt="" />
-              <div className="p-4">Medha</div>
+              <div className="p-4 text-black">Medha</div>
               </div>
               <div className="flex-1 flex flex-col overflow-hidden">
                 <Sidebar />
