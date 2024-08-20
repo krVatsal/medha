@@ -41,10 +41,10 @@ const page = () => {
         </div>
 
       </div>
-      <div className=" relative pt-16 pl-20">
+      <div className=" relative pt-16 pl-10">
         <img  className="absolute pl-4 pt-5" src="/Plus circle.svg" alt="" />
         <a href="/whiteboard">
-        <button className="h-[65px] w-[267px] bg-white rounded-md font-bold">New Whiteboard</button>
+        <button className="h-[65px] w-[267px] bg-white rounded-2xl font-bold">New Whiteboard</button>
         </a>
         </div>
     </div>
