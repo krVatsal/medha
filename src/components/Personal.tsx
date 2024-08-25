@@ -5,11 +5,11 @@ function Personal() {
     <div>
       <div className="flex items-center gap-4">
         <div>
-        <img src="/bell.svg" alt="" />
+          <img src="/bell.svg" alt="" />
         </div>
 
         <div>
-         <img src="/bell.svg" alt="" />
+          <img src="/bell.svg" alt="" />
         </div>
 
         <div className="flex items-center justify-center text-gray-500 text-2xl">
@@ -17,7 +17,10 @@ function Personal() {
         </div>
 
         <div className="flex flex-row items-center">
-          <img src="/Screenshot_2024-08-17_at_8.13.58_AM-removebg-preview 3.png" alt="" />
+          <img
+            src="/Screenshot_2024-08-17_at_8.13.58_AM-removebg-preview 3.png"
+            alt=""
+          />
           {/* <span className="w-12 h-12 bg-black rounded-full block mr-2"></span> */}
           <div className="flex flex-col">
             <div className="text-black text-base font-bold">Your Name</div>
