@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const page = () => {
   return (
     <div>
@@ -9,8 +9,11 @@ const page = () => {
           <div className="pt-2 text-[#696969]">Manage all the files</div>
         </div>
         <div className="flex items-center">
-          
-                <img className="relative z-10 left-48" src="/Search.svg" alt="" />
+        <Image
+      alt=""
+      src="/Search.svg"
+    />
+                {/* <img className="relative z-10 left-48" src="/Search.svg" alt="" /> */}
           <input
             className="h-[40px] w-[215px] rounded-full placeholder-gray-900 pl-4 "
             type="text"
@@ -37,7 +40,11 @@ const page = () => {
 
       </div>
       <div className=" relative pt-16 pl-10">
-        <img  className="absolute pl-4 pt-5" src="/Plus circle.svg" alt="" />
+      <Image
+      alt=""
+      src="/Plus circle.svg"
+    />
+        {/* <img  className="absolute pl-4 pt-5" src="/Plus circle.svg" alt="" /> */}
         <a href="#">
         <button className="h-[65px] w-[267px] bg-white rounded-2xl font-bold">Upload a new file</button>
         </a>

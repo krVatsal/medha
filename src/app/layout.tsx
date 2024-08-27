@@ -5,7 +5,7 @@ import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
 import { usePathname } from "next/navigation";  // Correctly import useRouter
-
+import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata: Metadata = {
@@ -30,7 +30,7 @@ export default function RootLayout({
             <div className="col-span-1 flex flex-col h-full">
             {showNavbar && ( // Conditionally render the logo and text
                 <div className="flex p-2">
-                  <img className="pl-6" src="/Codepen.svg" alt="Logo" />
+                  <Image className="pl-6" src="/Codepen.svg" alt="Logo" />
                   <div className="p-4">Medha</div>
                 </div>
               )}

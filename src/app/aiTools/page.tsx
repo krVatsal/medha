@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const page = () => {
   return (
     <div>
@@ -11,7 +11,11 @@ const page = () => {
           </div>
         </div>
         <div className="flex items-center">
-          <img className="relative z-10 left-60" src="/Search.svg" alt="" />
+        <Image
+      alt=""
+      src="/Search.svg"
+    />
+          {/* <img className="relative z-10 left-60" src="/Search.svg" alt="" /> */}
           <input
             className="h-[40px] w-[255px] rounded-full placeholder-gray-900 pl-4 "
             type="text"

@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { useForm } from 'react-hook-form';
-
+import Image from 'next/image';
 const LoginPage = () => {
   const {
     register,
@@ -19,7 +19,11 @@ const LoginPage = () => {
   return (
     <div className="pr-32 flex flex-col justify-center items-center min-h-screen bg-white">
       <div className="text-lg flex gap-3 font-normal items-center mb-8">
-        <img src="./Codepen.svg" alt="Logo" />
+      <Image
+      alt=""
+      src="/Codepen.svg"
+    />
+        {/* <img src="./Codepen.svg" alt="Logo" /> */}
         <span className='text-[26px]'>Medha</span>
       </div>
       <form
@@ -31,6 +35,12 @@ const LoginPage = () => {
 
         {/* Email Input */}
         <div className="relative mb-4">
+        <Image
+          src="./Mail.svg" // Add the link to your SVG icon
+          alt="Email Icon"
+          className="absolute left-2 top-1/4 transform -translate-y-1/2"
+    />
+    
           <img
             src="./Mail.svg" // Add the link to your SVG icon
             alt="Email Icon"
@@ -52,22 +62,32 @@ const LoginPage = () => {
             }`}
           />
           {isValid && !errors.email && (
-            <img
-              src="./Check circle.svg" // Add the link to your SVG icon
-              alt="Checkmark Icon"
-              className="absolute right-2 top-1/2 transform -translate-y-1/2"
-            />
+                   <Image
+                   src="./Check circle.svg" // Add the link to your SVG icon
+                   alt="Checkmark Icon"
+                   className="absolute right-2 top-1/2 transform -translate-y-1/2"
+             />
+            // <img
+            //   src="./Check circle.svg" // Add the link to your SVG icon
+            //   alt="Checkmark Icon"
+            //   className="absolute right-2 top-1/2 transform -translate-y-1/2"
+            // />
           )}
           {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
         </div>
 
         {/* Password Input */}
         <div className="relative mb-6">
-          <img
+        <Image
             src="./Key.svg" // Add the link to your SVG icon
             alt="Lock Icon"
             className="absolute left-2 top-1/4 transform -translate-y-1/2"
-          />
+             />
+          {/* <img
+            src="./Key.svg" // Add the link to your SVG icon
+            alt="Lock Icon"
+            className="absolute left-2 top-1/4 transform -translate-y-1/2"
+          /> */}
           <input
             id="password"
             type="password"
@@ -84,11 +104,16 @@ const LoginPage = () => {
             }`}
           />
           {isValid && !errors.password && (
-            <img
-              src="./Check circle.svg" // Add the link to your SVG icon
-              alt="Checkmark Icon"
-              className="absolute right-2 top-1/2 transform -translate-y-1/2"
-            />
+                    <Image
+                    src="./Check circle.svg" // Add the link to your SVG icon
+                    alt="Checkmark Icon"
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2"
+                     />
+            // <img
+            //   src="./Check circle.svg" // Add the link to your SVG icon
+            //   alt="Checkmark Icon"
+            //   className="absolute right-2 top-1/2 transform -translate-y-1/2"
+            // />
           )}
           {errors.password && <p className="text-red-500 text-xs mt-1">{errors.password.message}</p>}
         </div>
@@ -102,7 +127,10 @@ const LoginPage = () => {
             Sign in
           </button>
           <span className="text-[#A1A1A1]">or</span>
-          <img src="./Screenshot_2024-08-22_at_3.00.58_AM-removebg-preview 4.png" alt="Alternate Sign In" />
+          <Image
+                    src="./Screenshot_2024-08-22_at_3.00.58_AM-removebg-preview 4.png" alt="Alternate Sign In"
+                     />
+          {/* <img src="./Screenshot_2024-08-22_at_3.00.58_AM-removebg-preview 4.png" alt="Alternate Sign In" /> */}
         </div>
 
         {/* Sign Up Link */}

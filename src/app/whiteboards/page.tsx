@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const page = () => {
   return (
     <div>
@@ -9,7 +9,7 @@ const page = () => {
           <div className="pt-2 text-[#696969]">Create a whiteboard for you</div>
         </div>
         <div className="flex items-center">
-          <img className="relative z-10 left-48" src="/Search.svg" alt="" />
+          <Image className="relative z-10 left-48" src="/Search.svg" alt="" />
           <input
             className="h-[40px] w-[215px] rounded-full placeholder-gray-900 pl-4 "
             type="text"
@@ -32,7 +32,7 @@ const page = () => {
             <option value="option2">Option 2</option>
           </select>
           <div className="relative">
-            <img className="absolute pl-5 pt-2.5" src="/Plus.svg" alt="" />
+            <Image className="absolute pl-5 pt-2.5" src="/Plus.svg" alt="" />
             <button className="h-[40px] w-[155px] rounded-full ml-4 bg-white text-gray-900">
               Create Folder
             </button>
@@ -40,7 +40,7 @@ const page = () => {
         </div>
       </div>
       <div className=" relative pt-16 pl-10">
-        <img className="absolute pl-4 pt-5" src="/Plus circle.svg" alt="" />
+        <Image className="absolute pl-4 pt-5" src="/Plus circle.svg" alt="" />
         <a href="/whiteboard">
           <button className="h-[65px] w-[267px] bg-white rounded-2xl font-bold">
             New Whiteboard
