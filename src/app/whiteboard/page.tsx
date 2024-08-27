@@ -3,7 +3,11 @@ import dynamic from "next/dynamic";
 import { useState } from "react";
 import { ExcalidrawImperativeAPI } from "@excalidraw/excalidraw/types/types";
 
-const Excalidraw = dynamic(() => import("@excalidraw/excalidraw").then(mod => mod.Excalidraw), { ssr: false });
+// Correct dynamic import
+const Excalidraw = dynamic(
+  () => import("@excalidraw/excalidraw").then(mod => mod.Excalidraw),
+  { ssr: false }
+);
 
 const ExcalidrawWrapper: React.FC = () => {
   const [excalidrawAPI, setExcalidrawAPI] = useState<ExcalidrawImperativeAPI | null>(null);
@@ -11,7 +15,7 @@ const ExcalidrawWrapper: React.FC = () => {
   return (
     <div style={{ height: "100vh", width: "100vw" }}>
       <Excalidraw
-        ref={(api) => setExcalidrawAPI(api)}
+        ref={(api: ExcalidrawImperativeAPI | null) => setExcalidrawAPI(api)}
         initialData={{
           elements: [
             {

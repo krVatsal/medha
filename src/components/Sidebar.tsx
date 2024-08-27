@@ -16,7 +16,7 @@ function Sidebar() {
             className="flex items-center py-2 text-gray-900 font-semibold"
           >
             <div className="w-5 h-5 mr-3">
-              <Image src="/home.svg" alt="" />
+              <Image width={32} height={32} src="/home.svg" alt="" />
             </div>
             Home
           </a>
@@ -25,7 +25,7 @@ function Sidebar() {
             className="flex items-center py-2 text-gray-900 font-semibold"
           >
             <div className="w-5 h-5 mr-3">
-              <Image src="/add_circle.svg" alt="" />
+              <Image width={32} height={32} src="/add_circle.svg" alt="" />
             </div>
             AI Tools
           </a>
@@ -34,7 +34,7 @@ function Sidebar() {
             className="flex items-center py-2 text-gray-900 font-semibold"
           >
             <div className="w-5 h-5 mr-3">
-              <Image src="/Message square.svg" alt="" />
+              <Image width={32} height={32} src="/Message square.svg" alt="" />
             </div>
             AI Chatbot
           </a>
@@ -43,7 +43,7 @@ function Sidebar() {
             className="flex items-center py-2 text-gray-900 font-semibold"
           >
             <div className="w-5 h-5 mr-3">
-              <Image src="/Edit.svg" alt="" />
+              <Image width={32} height={32} src="/Edit.svg" alt="" />
             </div>
             Whiteboards
           </a>
@@ -52,7 +52,7 @@ function Sidebar() {
             className="flex items-center py-2 text-gray-900 font-semibold"
           >
             <div className="w-5 h-5 mr-3">
-              <Image src="/Folder.svg" alt="" />
+              <Image width={32} height={32} src="/Folder.svg" alt="" />
             </div>
             Files
           </a>
@@ -65,13 +65,13 @@ function Sidebar() {
           className="flex items-center py-2 text-gray-900 font-semibold"
         >
           <div className="w-5 h-5 mr-3">
-            <Image src="/Arrow up-circle.svg" alt="" />
+            <Image width={32} height={32} src="/Arrow up-circle.svg" alt="" />
           </div>
           Upgrade Plan
         </a>
         <a href="logout" className="flex items-center py-2 text-red-600">
           <div className="w-5 h-5 mr-3">
-            <Image src="/Log out.svg" alt="" />
+            <Image width={32} height={32} src="/Log out.svg" alt="" />
           </div>
           Log Out
         </a>

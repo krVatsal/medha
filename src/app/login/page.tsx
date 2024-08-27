@@ -20,10 +20,10 @@ const LoginPage = () => {
     <div className="pr-32 flex flex-col justify-center items-center min-h-screen bg-white">
       <div className="text-lg flex gap-3 font-normal items-center mb-8">
       <Image
-      alt=""
+      width={32} height={32} alt=""
       src="/Codepen.svg"
     />
-        {/* <img src="./Codepen.svg" alt="Logo" /> */}
+        {/* <img src="./Codepen.svg" width={32} height={32} alt="Logo" /> */}
         <span className='text-[26px]'>Medha</span>
       </div>
       <form
@@ -37,13 +37,13 @@ const LoginPage = () => {
         <div className="relative mb-4">
         <Image
           src="./Mail.svg" // Add the link to your SVG icon
-          alt="Email Icon"
+          width={32} height={32} alt="Email Icon"
           className="absolute left-2 top-1/4 transform -translate-y-1/2"
     />
     
           {/* <img
             src="./Mail.svg" // Add the link to your SVG icon
-            alt="Email Icon"
+            width={32} height={32} alt="Email Icon"
             className="absolute left-2 top-1/4 transform -translate-y-1/2"
           /> */}
           <input
@@ -64,12 +64,12 @@ const LoginPage = () => {
           {isValid && !errors.email && (
                    <Image
                    src="./Check circle.svg" // Add the link to your SVG icon
-                   alt="Checkmark Icon"
+                   width={32} height={32} alt="Checkmark Icon"
                    className="absolute right-2 top-1/2 transform -translate-y-1/2"
              />
             // <img
             //   src="./Check circle.svg" // Add the link to your SVG icon
-            //   alt="Checkmark Icon"
+            //   width={32} height={32} alt="Checkmark Icon"
             //   className="absolute right-2 top-1/2 transform -translate-y-1/2"
             // />
           )}
@@ -80,12 +80,12 @@ const LoginPage = () => {
         <div className="relative mb-6">
         <Image
             src="./Key.svg" // Add the link to your SVG icon
-            alt="Lock Icon"
+            width={32} height={32} alt="Lock Icon"
             className="absolute left-2 top-1/4 transform -translate-y-1/2"
              />
           {/* <img
             src="./Key.svg" // Add the link to your SVG icon
-            alt="Lock Icon"
+            width={32} height={32} alt="Lock Icon"
             className="absolute left-2 top-1/4 transform -translate-y-1/2"
           /> */}
           <input
@@ -106,12 +106,12 @@ const LoginPage = () => {
           {isValid && !errors.password && (
                     <Image
                     src="./Check circle.svg" // Add the link to your SVG icon
-                    alt="Checkmark Icon"
+                    width={32} height={32} alt="Checkmark Icon"
                     className="absolute right-2 top-1/2 transform -translate-y-1/2"
                      />
             // <img
             //   src="./Check circle.svg" // Add the link to your SVG icon
-            //   alt="Checkmark Icon"
+            //   width={32} height={32} alt="Checkmark Icon"
             //   className="absolute right-2 top-1/2 transform -translate-y-1/2"
             // />
           )}
@@ -128,9 +128,9 @@ const LoginPage = () => {
           </button>
           <span className="text-[#A1A1A1]">or</span>
           <Image
-                    src="./Screenshot_2024-08-22_at_3.00.58_AM-removebg-preview 4.png" alt="Alternate Sign In"
-                     />
-          {/* <img src="./Screenshot_2024-08-22_at_3.00.58_AM-removebg-preview 4.png" alt="Alternate Sign In" /> */}
+                    src="./Screenshot_2024-08-22_at_3.00.58_AM-removebg-preview 4.png" width={32} height={32} alt="Alternate Sign In"
+                     /> 
+          {/* <img src="./Screenshot_2024-08-22_at_3.00.58_AM-removebg-preview 4.png" width={32} height={32} alt="Alternate Sign In" /> */}
         </div>
 
         {/* Sign Up Link */}

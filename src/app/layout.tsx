@@ -30,7 +30,7 @@ export default function RootLayout({
             <div className="col-span-1 flex flex-col h-full">
             {showNavbar && ( // Conditionally render the logo and text
                 <div className="flex p-2">
-                  <Image className="pl-6" src="/Codepen.svg" alt="Logo" />
+                  <Image className="pl-6" src="/Codepen.svg" width={62} height={32} alt="Logo" />
                   <div className="p-4">Medha</div>
                 </div>
               )}

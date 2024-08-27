@@ -4,7 +4,7 @@ function Institute() {
   return (
     <div className="flex flex-row items-center">
       <div className="mr-2">
-       <Image src="/myinstitution.svg" alt="" />
+       <Image width={32} height={32} src="/myinstitution.svg" alt="" />
       </div>
       <div className="flex flex-col">
         <div className="text-black text-base font-bold">My Institute</div>

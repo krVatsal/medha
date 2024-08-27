@@ -27,7 +27,7 @@ const LoginPage = () => {
   return (
     <div className="pr-32 flex flex-col justify-center items-center min-h-screen bg-white">
       <div className="text-lg flex gap-3 font-normal items-center mb-8">
-        <Image src="./Codepen.svg" alt="Logo" />
+        <Image src="./Codepen.svg" width={32} height={32} alt="Logo" />
         <span className="text-[26px]">Medha</span>
       </div>
       <div className="text-left flex gap-2 text-sm">
@@ -49,7 +49,7 @@ const LoginPage = () => {
         <div className="relative mb-4">
           <Image
             src="./User.svg"
-            alt="User Icon"
+            width={32} height={32} alt="User Icon"
             className="absolute left-2 top-1/4 transform -translate-y-1/2"
           />
           <input
@@ -72,7 +72,7 @@ const LoginPage = () => {
         <div className="relative mb-4">
           <Image
             src="./Mail.svg"
-            alt="Email Icon"
+            width={32} height={32} alt="Email Icon"
             className="absolute left-2 top-1/4 transform -translate-y-1/2"
           />
           <input
@@ -93,7 +93,7 @@ const LoginPage = () => {
           {isValid && !errors.email && (
             <Image
               src="./Check circle.svg"
-              alt="Checkmark Icon"
+              width={32} height={32} alt="Checkmark Icon"
               className="absolute right-2 top-1/2 transform -translate-y-1/2"
             />
           )}
@@ -106,7 +106,7 @@ const LoginPage = () => {
         <div className="relative mb-6">
           <Image
             src="./Key.svg"
-            alt="Lock Icon"
+            width={32} height={32} alt="Lock Icon"
             className="absolute left-2 top-1/4 transform -translate-y-1/2"
           />
           <input
@@ -126,14 +126,14 @@ const LoginPage = () => {
           />
           <Image
             src="./Eye off.svg" // Add your eye icon here
-            alt="Toggle Password Visibility"
+            width={32} height={32} alt="Toggle Password Visibility"
             className="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer"
             onClick={() => setShowPassword(!showPassword)}
           />
           {isValid && !errors.password && (
             <Image
               src="./Check circle.svg"
-              alt="Checkmark Icon"
+              width={32} height={32} alt="Checkmark Icon"
               className="absolute right-8 top-1/2 transform -translate-y-1/2"
             />
           )}
@@ -148,7 +148,7 @@ const LoginPage = () => {
         <div className="relative mb-6">
           <Image
             src="./Key.svg"
-            alt="Lock Icon"
+            width={32} height={32} alt="Lock Icon"
             className="absolute left-2 top-1/4 transform -translate-y-1/2"
           />
           <input
@@ -166,14 +166,14 @@ const LoginPage = () => {
           />
           <Image
             src="./Eye off.svg" // Add your eye icon here
-            alt="Toggle Password Visibility"
+            width={32} height={32} alt="Toggle Password Visibility"
             className="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer"
             onClick={() => setShowRetypePassword(!showRetypePassword)}
           />
           {isValid && !errors.retypePassword && (
             <Image
               src="./Check circle.svg"
-              alt="Checkmark Icon"
+              width={32} height={32} alt="Checkmark Icon"
               className="absolute right-8 top-1/2 transform -translate-y-1/2"
             />
           )}
@@ -195,7 +195,7 @@ const LoginPage = () => {
           <span className="text-[#A1A1A1]">or</span>
           <Image
             src="./Screenshot_2024-08-22_at_3.00.58_AM-removebg-preview 4.png"
-            alt="Alternate Sign In"
+            width={32} height={32} alt="Alternate Sign In"
             className="cursor-pointer"
           />
         </div>
