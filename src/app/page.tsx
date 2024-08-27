@@ -8,7 +8,7 @@ export default function Home() {
       {/* Greeting Section */}
       <div className="text-2xl font-bold">Good Morning Aditya!</div>
       <div className="text-lg text-gray-500">
-        Let's make this day productive
+        Let&apos;s make this day productive
       </div>
 
       {/* Main Content Section */}
