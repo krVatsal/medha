@@ -41,11 +41,11 @@ const LoginPage = () => {
           className="absolute left-2 top-1/4 transform -translate-y-1/2"
     />
     
-          <img
+          {/* <img
             src="./Mail.svg" // Add the link to your SVG icon
             alt="Email Icon"
             className="absolute left-2 top-1/4 transform -translate-y-1/2"
-          />
+          /> */}
           <input
             id="email"
             type="email"

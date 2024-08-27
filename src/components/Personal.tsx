@@ -1,15 +1,15 @@
 import React from "react";
-
+import Image from "next/image";
 function Personal() {
   return (
     <div>
       <div className="flex items-center gap-4">
         <div>
-          <img src="/bell.svg" alt="" />
+          <Image src="/bell.svg" alt="" />
         </div>
 
         <div>
-          <img src="/bell.svg" alt="" />
+          <Image src="/bell.svg" alt="" />
         </div>
 
         <div className="flex items-center justify-center text-gray-500 text-2xl">
@@ -17,7 +17,7 @@ function Personal() {
         </div>
 
         <div className="flex flex-row items-center">
-          <img
+          <Image
             src="/Screenshot_2024-08-17_at_8.13.58_AM-removebg-preview 3.png"
             alt=""
           />

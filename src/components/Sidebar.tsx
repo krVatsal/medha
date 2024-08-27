@@ -1,5 +1,6 @@
 import React from "react";
 import home from "../../public/home.svg";
+import Image from "next/image";
 function Sidebar() {
   return (
     <div className="bg-white h-full border-r border-gray-200 flex flex-col">
@@ -15,7 +16,7 @@ function Sidebar() {
             className="flex items-center py-2 text-gray-900 font-semibold"
           >
             <div className="w-5 h-5 mr-3">
-              <img src="/home.svg" alt="" />
+              <Image src="/home.svg" alt="" />
             </div>
             Home
           </a>
@@ -24,7 +25,7 @@ function Sidebar() {
             className="flex items-center py-2 text-gray-900 font-semibold"
           >
             <div className="w-5 h-5 mr-3">
-              <img src="/add_circle.svg" alt="" />
+              <Image src="/add_circle.svg" alt="" />
             </div>
             AI Tools
           </a>
@@ -33,7 +34,7 @@ function Sidebar() {
             className="flex items-center py-2 text-gray-900 font-semibold"
           >
             <div className="w-5 h-5 mr-3">
-              <img src="/Message square.svg" alt="" />
+              <Image src="/Message square.svg" alt="" />
             </div>
             AI Chatbot
           </a>
@@ -42,7 +43,7 @@ function Sidebar() {
             className="flex items-center py-2 text-gray-900 font-semibold"
           >
             <div className="w-5 h-5 mr-3">
-              <img src="/Edit.svg" alt="" />
+              <Image src="/Edit.svg" alt="" />
             </div>
             Whiteboards
           </a>
@@ -51,7 +52,7 @@ function Sidebar() {
             className="flex items-center py-2 text-gray-900 font-semibold"
           >
             <div className="w-5 h-5 mr-3">
-              <img src="/Folder.svg" alt="" />
+              <Image src="/Folder.svg" alt="" />
             </div>
             Files
           </a>
@@ -64,13 +65,13 @@ function Sidebar() {
           className="flex items-center py-2 text-gray-900 font-semibold"
         >
           <div className="w-5 h-5 mr-3">
-            <img src="/Arrow up-circle.svg" alt="" />
+            <Image src="/Arrow up-circle.svg" alt="" />
           </div>
           Upgrade Plan
         </a>
         <a href="logout" className="flex items-center py-2 text-red-600">
           <div className="w-5 h-5 mr-3">
-            <img src="/Log out.svg" alt="" />
+            <Image src="/Log out.svg" alt="" />
           </div>
           Log Out
         </a>

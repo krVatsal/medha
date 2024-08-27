@@ -1,10 +1,10 @@
 import React from "react";
-
+import Image from "next/image";
 function Institute() {
   return (
     <div className="flex flex-row items-center">
       <div className="mr-2">
-       <img src="/myinstitution.svg" alt="" />
+       <Image src="/myinstitution.svg" alt="" />
       </div>
       <div className="flex flex-col">
         <div className="text-black text-base font-bold">My Institute</div>

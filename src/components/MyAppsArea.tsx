@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image alt="" from "next/image";
 function MyAppsArea() {
   return (
     <div className="bg-white bg-opacity-60 p-8 rounded-2xl shadow-lg">
@@ -13,31 +13,31 @@ function MyAppsArea() {
         <div className="grid grid-cols-4 gap-4 justify-items-center">
           {/* Placeholder for Create Quiz */}
           <div className="flex flex-col items-center space-y-1">
-            <img src="/Create_quiz.svg" className="w-16 h-16" />
+            <Image alt="" src="/Create_quiz.svg" className="w-16 h-16" />
             <div className="text-xs font-semibold">Create Quiz</div>
           </div>
 
           {/* Placeholder for Summarise PDF */}
           <div className="flex flex-col items-center space-y-1">
-            <img src="/Summarize_pdf.svg" className="w-16 h-16" />
+            <Image alt="" src="/Summarize_pdf.svg" className="w-16 h-16" />
             <div className="text-xs font-semibold">Summarise PDF</div>
           </div>
 
           {/* Placeholder for Create PPT */}
           <div className="flex flex-col items-center space-y-1">
-            <img src="/Create_ppt.svg" className="w-16 h-16" />
+            <Image alt="" src="/Create_ppt.svg" className="w-16 h-16" />
             <div className="text-xs font-semibold">Create PPT</div>
           </div>
 
           {/* Placeholder for Summarise Youtube Video */}
           <div className="flex flex-col items-center space-y-1">
-            <img src="/Summarize_yt.svg" className="w-16 h-16" />
+            <Image alt="" src="/Summarize_yt.svg" className="w-16 h-16" />
             <div className="text-xs font-semibold">Summarise Youtube Video</div>
           </div>
 
           {/* Placeholder for Create Flash Cards */}
           <div className="flex flex-col items-center justify-center space-y-1 col-span-1">
-            <img src="/Create_flash_cards.svg" className="w-16 h-16" />
+            <Image alt="" src="/Create_flash_cards.svg" className="w-16 h-16" />
             <div className="text-xs font-semibold">Create Flash Cards</div>
           </div>
         </div>
