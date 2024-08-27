@@ -16,8 +16,8 @@ const LoginPage = () => {
     mode: "onBlur",
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = () => {
+    // console.log(data);
     // Handle login logic here, such as calling an API to authenticate
   };
 
@@ -63,7 +63,7 @@ const LoginPage = () => {
               errors.name ? "border-red-500" : ""
             }`}
           />
-          {errors.name && (
+          {errors.name && typeof errors.name.message === 'string' && (
             <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>
           )}
         </div>
@@ -97,7 +97,7 @@ const LoginPage = () => {
               className="absolute right-2 top-1/2 transform -translate-y-1/2"
             />
           )}
-          {errors.email && (
+          {errors.email && typeof errors.email.message === 'string' && (
             <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>
           )}
         </div>
@@ -137,7 +137,7 @@ const LoginPage = () => {
               className="absolute right-8 top-1/2 transform -translate-y-1/2"
             />
           )}
-          {errors.password && (
+          {errors.password && typeof errors.password.message === 'string' && (
             <p className="text-red-500 text-xs mt-1">
               {errors.password.message}
             </p>
@@ -177,7 +177,7 @@ const LoginPage = () => {
               className="absolute right-8 top-1/2 transform -translate-y-1/2"
             />
           )}
-          {errors.retypePassword && (
+          {errors.retypePassword && typeof errors.retypePassword.message === 'string' && (
             <p className="text-red-500 text-xs mt-1">
               {errors.retypePassword.message}
             </p>
