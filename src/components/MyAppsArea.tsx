@@ -1,5 +1,5 @@
 import React from "react";
-import Image alt="" from "next/image";
+import Image from "next/image";
 function MyAppsArea() {
   return (
     <div className="bg-white bg-opacity-60 p-8 rounded-2xl shadow-lg">
